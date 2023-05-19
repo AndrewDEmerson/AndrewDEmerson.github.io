@@ -1,8 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: beige; /* Add the desired background color */
+    }
+
+    header, main, footer {
+      width: 100%;
+      max-width: 800px; /* Adjust the maximum width as needed */
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    section {
+      width: 70%; /* Adjust the width of the sections as needed */
+    }
+  </style>
+</head>
+
 <body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
 
-<h1>Hello There</h1>
-<a href="./simon_says">Play a Simon Says Game!</a> 
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>My name is Andrew Emerson, and I am a Computer Engineering Major at San Jose State University</p>
+    </section>
 
+    <section>
+      <h2>My Projects</h2>
+      <ul>
+        <li>
+          <h3><a href="oz/index.html">Oz</a></h3>
+          <p>A logic simulator software developed by Alexander Shapiro, Wayne Flores, and myself as our senior design project.</p>
+        </li>
+        <li>
+          <h3><a href="./simon_says">Simon Says</a></h3>
+          <p>A Simon Says game written in JavaScript</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Andrew Emerson.</p>
+  </footer>
 </body>
-</html> 
+
+</html>
