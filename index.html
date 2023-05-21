@@ -3,62 +3,341 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: beige; /* Add the desired background color */
-    }
-
-    header, main, footer {
-      width: 100%;
-      max-width: 800px; /* Adjust the maximum width as needed */
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    section {
-      width: 70%; /* Adjust the width of the sections as needed */
-    }
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Andrew Emerson</title>
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Andrew Emerson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>My name is Andrew Emerson, and I am a Computer Engineering Major at San Jose State University</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" class="bg-dark text-light py-5">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">At the intersection of Physics and Engineering.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>My Projects</h2>
-      <ul>
-        <li>
-          <h3><a href="oz/index.html">Oz</a></h3>
-          <p>A logic simulator software developed by Alexander Shapiro, Wayne Flores, and myself as our senior design project.</p>
-        </li>
-        <li>
-          <h3><a href="./simon_says">Simon Says</a></h3>
-          <p>A Simon Says game written in JavaScript</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">About Me</h2>
+      <p>Hello, I'm Andrew Emerson, a computer engineering major about to graduate from San Jose State University.
+        Throughout my academic journey, I have developed a strong foundation in software engineering and digital design.
+      </p>
+      <p>In addition to my computer engineering studies, I pursued a minor in physics with a focus on modern optics.
+        This interdisciplinary background has provided me with a unique perspective on the relationship between
+        electronics and optics.</p>
+      <p>With a strong technical skill set and a curious mindset, I am continuously exploring new technologies and
+        frameworks to stay up-to-date with the rapidly evolving field of computer engineering. I am excited to embark on
+        new challenges and contribute to the development of cutting-edge projects.</p>
+    </div>
+  </section>
 
-  <footer>
+  <!-- Education -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Education</h2>
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <img src="assets/sjsu.png" style="height:200px;" class="mb-4" alt="SJSU Logo">
+          <p>Bachelor of Science: Computer Engineering</p>
+          <p>Minor in Physics</p>
+          <p>August 2019 - May 2023</p>
+          <div class="row justify-content-center mb-4">
+            <button class="btn btn-secondary mr-3" type="button" data-toggle="collapse" data-target="#physicsContent"
+              aria-expanded="false" aria-controls="physicsContent">
+              Fourier Optics
+            </button>
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#machineLearningContent"
+              aria-expanded="false" aria-controls="machineLearningContent">
+              Machine Learning
+            </button>
+          </div>
+
+          <div class="collapse" id="physicsContent">
+            <div class="card card-body text-left">
+              <p style="text-indent: 1.5em;">In pursuing my physics minor, I took several classes focused on modern
+                optics. Throughout these
+                courses, I gained hands-on knowledge of Köhler Illumination, Abbe Theory of Image Formation, Fourier
+                Optics, as well as contrast methods such as Darkfield, Phase Contrast, and Fluorescence Microscopy.</p>
+
+              <p style="text-indent: 1.5em;">During my time in the microscopy lab, I had the opportunity to construct an
+                optical system specifically
+                designed for imaging small samples. This practical experience allowed me to explore various imaging
+                techniques, including brightfield, darkfield, phase contrast, and fluorescence microscopy, and provided
+                me with valuable insights into designing and setting up optical systems applicable to diverse fields.
+              </p>
+
+              <p style="text-indent: 1.5em;">Completing my minor in physics has provided me with a solid foundation in
+                optics, along with practical
+                skills in building and operating laboratory equipment. The knowledge and experience gained through these
+                courses have not only deepened my understanding of electromagnetism, but also proved valuable in both
+                physics and electrical engineering domains.</p>
+
+              <a href="optics\physics.html" class="btn btn-secondary">For more information about my optics experience,
+                click here</a>
+
+            </div>
+          </div>
+
+          <div class="collapse" id="machineLearningContent">
+            <div class="card card-body text-left">
+              <p style="text-indent: 1.5em;">In the course "Introduction to Machine Learning and Pattern Recognition for
+                Big Data Analytics," I delved into the fundamental concepts, theories, approaches, algorithms, and
+                applications of machine learning in the context of big data analytics. This course provided a
+                comprehensive understanding of the field, covering both supervised and unsupervised learning techniques
+                and exploring learning theory.</p>
+
+              <p style="text-indent: 1.5em;">Throughout the course, I gained practical experience in implementing
+                machine learning algorithms using Python. I extensively utilized popular libraries such as matplotlib,
+                pandas, numpy, and scikit-learn, which enabled me to effectively analyze and visualize data, perform
+                data preprocessing, and apply various machine learning models.</p>
+
+              <p style="text-indent: 1.5em;">Among the key topics covered in the course were K-Nearest Neighbors (KNN),
+                decision trees, and ensemble methods. I learned how to construct classification and regression models
+                using these techniques, understanding their strengths, weaknesses, and optimal usage scenarios.
+                Additionally, the course introduced me to the field of clustering, where I explored different clustering
+                algorithms to identify natural groupings within datasets.</p>
+
+              <p style="text-indent: 1.5em;">Furthermore, the course touched upon Natural Language Processing (NLP), a
+                fascinating subfield of machine learning that focuses on analyzing and understanding human language.
+                Through NLP, I gained insights into processing and extracting meaningful information from textual data,
+                enabling me to develop applications such as sentiment analysis, text classification, and language
+                generation.</p>
+
+              <p style="text-indent: 1.5em;">Lastly, the course explored the exciting realm of neural networks, where I
+                learned about the architecture, training, and application of artificial neural networks for tasks such
+                as image recognition, sequence processing, and prediction.</p>
+
+              <p style="text-indent: 1.5em;">By completing this course, I have acquired a solid foundation in machine
+                learning, enabling me to apply the learned concepts and techniques to real-world data analysis and
+                predictive modeling challenges. The knowledge gained in Python programming, along with the practical
+                experience of working with popular machine learning libraries, positions me well in the growing fields
+                of Machine Learing and Artifical Intelligence.</p>
+            </div>
+          </div>
+
+          <!-- Code ensure that only 1 of the education info buttons can be open at a time -->
+          <script>
+            const buttons = document.querySelectorAll('[data-toggle="collapse"]');
+            buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                const target = document.querySelector(button.getAttribute('data-target'));
+                const otherCards = document.querySelectorAll('.collapse.show');
+                otherCards.forEach(card => {
+                  if (card !== target) {
+                    $(card).collapse('hide');
+                  }
+                });
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <!-- Start of Projects list -->
+
+        <!-- Oz -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://github.com/alexanderjshapiro/oz/raw/main/assets/demo.png" class="card-img" alt="Oz"
+                  style="width: 300px; height: auto;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Oz: Logic Simulation</h5>
+                  <p class="card-text">Oz is a digital logic design application meant for students and others learning
+                    about digital design. Oz was created as a senior project for the Computer Engineering Department at
+                    San Jose State University. Oz was developed by Andrew Emerson, Alexander Shapiro, & Wayne Flores.
+                  </p>
+                  <a href="oz/index.html" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Atari Controller -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets\atari.jpg" class="card-img" alt="Atari Controller" style="width: 300px; height: auto;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Atari Controller</h5>
+                  <p class="card-text">A custom PCB was designed with an STM32 microcontroller to convert the parallel
+                    style port of an Atari joystick
+                    to a USB HID device that could be used with a modern computer, or with an XBOX through a modified
+                    HID
+                    protocol.</p>
+                  <!-- <a href="./simon_says" class="btn btn-primary">View Project</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ozmek Breadboard Computer -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets\breadboard.jpg" class="card-img" alt="BreadBoard Computer"
+                  style="width: 300px; height: auto;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">BreadBoard Computer</h5>
+                  <p class="card-text">A computer system was designed on a breadboard to interface with SRAM and
+                    peripherals such as a keyboard.
+                    An Arduino development board was programmed to emulate an intel 8086 CPU, and 7400-series logic
+                    chips were
+                    used to build the circuity.</p>
+                  <!-- <a href="./simon_says" class="btn btn-primary">View Project</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCE pancake printer -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets\printer.jpg" class="card-img" alt="SCE pancake printer"
+                  style="width: 300px; height: auto;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">SCE Pancake Printer</h5>
+                  <p class="card-text">Lead a team to design, build, a program a CNC machine to automatically make pancakes for SJSU students. A Cartesian style plotting machine was designed in Fusion360 to
+                    extrude pancake batter onto a griddle</p>
+                  <a href="https://github.com/SarahS16/pancake-printer" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simon Says -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets\SimonSays.gif" class="card-img" alt="Project 1" style="width: 300px; height: auto;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Simon Says</h5>
+                  <p class="card-text">A simple Simon Says game written as an introduction to javaScript and CSS.</p>
+                  <p class="card-text">The player has 3 tries to correctly repeat the randomly generated pattern. The
+                    games gets faster as the player advances. </p>
+                  <a href="./simon_says" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="col-md-6 offset-md-3">
+        <h4>Software Engineering</h4>
+        <ul>
+          <li>Programming languages: C++, Assembly, Dart, Java, Python, Rust</li>
+          <li>Development Tools: VS Code, Eclipse, Git</li>
+          <li>Web development: HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+      <div class="col-md-6 offset-md-3">
+        <h4>Computer Engineering</h4>
+        <ul>
+          <li>Languages: Verilog</li>
+          <li>Tools: Vivado, SolidWorks, Fusion 360, KiCad, OpenScad</li>
+          <li>Platforms: TI MSP, STM32, Xilinx FPGA, </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h4 class="text-center"><i class="fab fa-linkedin"></i> LinkedIn</h4>
+          <p class="text-center"><a href="https://www.linkedin.com/in/andrewdemerson/">Check me out on LinkedIn</a></p>
+          <h4 class="text-center"><i class="far fa-envelope"></i> Email</h4>
+          <p class="text-center"><a href="mailto:AndrewDEmerson01@gmail.com">Email me at AndrewDEmerson01@gmail.com</a>
+          </p>
+        </div>
+        <!-- Add more links as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
     <p>&copy; 2023 Andrew Emerson.</p>
   </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

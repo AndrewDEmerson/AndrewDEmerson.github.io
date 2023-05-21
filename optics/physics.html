@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Andrew Emerson</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 mt-5">
+    <div class="container">
+      <h1 class="text-center">Optics Lab Reports</h1>
+      <p>
+        In these labs, we explored various aspects of optical imaging and gained practical experience with different
+        microscopy techniques.
+        Each lab report focuses on a specific topic and provides insights into the principles and techniques used in
+        optical microscopy.
+        Labs were based upon the <a href="https://www.thorlabs.com/omc">Optical Microscopy Course by Thor Labs</a>, created by my professor Dr. Neil Switz, and Dan Fletcher.
+        Below is a list of the lab reports and a brief overview of their contents:
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <strong>Lab 1: Introduction to Optical Imaging (I)</strong>
+              <ul>
+                <li>Handling Cameras and Using Camera Controls</li>
+                <li>Imaging and Lenses; Lens Focal Length</li>
+                <li>Cameras (Color and Monochrome)</li>
+                <li>Light Spectra</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 2: Introduction to Optical Imaging (II)</strong>
+              <ul>
+                <li>Imaging with a Camera; Focusing at Infinity</li>
+                <li>Setting Up Your Rail System</li>
+                <li>Imaging and Resolution Measurement</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 3: Aberrations and Illumination</strong>
+              <ul>
+                <li>Lens Orientation</li>
+                <li>Illumination Coherence</li>
+                <li>Color (Chromatic Aberration); Achromatic Lenses</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 4: Köhler Illumination</strong>
+              <ul>
+                <li>Collection Optics</li>
+                <li>Condensing Optics</li>
+                <li>Köhler Illumination</li>
+                <li>Numerical Aperture (NA); Resolution and Image Brightness</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 5: Köhler, Conjugate Planes, and Darkfield Imaging</strong>
+              <ul>
+                <li>Point-Spread Function (PSF)</li>
+                <li>Darkfield and Oblique Illumination</li>
+                <li>Image Manipulation in the Objective Back Focal Plane (BFP)</li>
+                <li>Darkfield I: Image Subtraction</li>
+                <li>Convolution and the PSF</li>
+                <li>Darkfield II: Convolution and Subtraction</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <strong>Lab 6: The Abbe Theory of Image Formation (I)</strong>
+              <ul>
+                <li>Imaging the BFP</li>
+                <li>Diffraction and the BFP</li>
+                <li>Spatial Filtering in the BFP</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 7: The Abbe Theory of Image Formation (II)</strong>
+              <ul>
+                <li>The Modulation Transfer Function (MTF)</li>
+                <li>Incoherent MTF</li>
+                <li>Coherent MTF</li>
+                <li>The Edge-Spread Function (ESF) and the MTF</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 8: Contrast Methods and Abbe Theory</strong>
+              <ul>
+                <li>Brightfield</li>
+                <li>Darkfield and Signal-to-Background</li>
+                <li>MTF and Contrast</li>
+                <li>Phase Contrast Imaging</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 9: Fluorescence Microscopy</strong>
+              <ul>
+                <li>Fluorescence and Fluorescence Imaging</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lab 10: Spectra and Filters</strong>
+              <ul>
+                <li>Light Spectra</li>
+                <li>Filter Transmission and Behavior</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p>
+        Each lab report provides detailed explanations, procedures, and results related to the respective topic.
+        By exploring these reports, I hope you'll gain a understanding of the principles and techniques involved
+        in optical microscopy.
+        Feel free to select and view any lab report from the provided list to delve into the fascinating world of
+        microscopy and optical imaging.
+      </p>
+    </div>
+  </section>
+
+  <!-- lab Section -->
+  <section id="labs">
+    <div class="container mb-5">
+      <!-- Select PDF -->
+      <div class="mt-4">
+        <label for="pdfSelect">Select a Lab Report to View:</label>
+        <select id="pdfSelect" class="form-select">
+          <!-- JavaScript code will dynamically generate the options -->
+        </select>
+      </div>
+
+      <script>
+        const pdfSelect = document.getElementById('pdfSelect');
+
+        // Generate options for Lab 1 to Lab 10
+        for (let i = 1; i <= 10; i++) {
+          const option = document.createElement('option');
+          option.value = `Lab_${i}.pdf`;
+          option.textContent = `Lab ${i}`;
+          if (i === 6) {
+            option.selected = true; // Preselect Lab 6
+          }
+          pdfSelect.appendChild(option);
+        }
+      </script>
+
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="pdfViewer" class="embed-responsive-item" src="Lab_6.pdf"></iframe>
+      </div>
+
+      <script>
+        // Get the PDF select element
+        // Get the PDF viewer iframe element
+        const pdfViewer = document.getElementById('pdfViewer');
+
+        // Function to update the PDF viewer with the selected PDF
+        function updatePDFViewer() {
+          // Get the selected PDF path
+          const selectedPath = pdfSelect.value;
+          // Set the src attribute of the PDF viewer iframe element
+          pdfViewer.setAttribute('src', selectedPath);
+        }
+
+        // Add event listener to the select element
+        pdfSelect.addEventListener('change', updatePDFViewer);
+      </script>
+    </div>
+  </section>
+
+
+
+
+  <!-- Link Bootstrap JS (at the end of the body for faster page loading) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Add any additional JavaScript files or scripts -->
+
+</body>
+
+</html>
